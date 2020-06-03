@@ -1,0 +1,311 @@
+@font-face {
+    font-family: love;
+    src: url("fonts/love.ttf");
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+}
+
+.panel {
+    max-width: 700px;
+    max-height: 700px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    margin: 15px;
+    margin-bottom: 20px;
+}
+
+.container p {
+    margin: 0;
+    text-align: center;
+    font-family: 'love';
+    font-size: 4em;
+    color: rgb(228, 43, 74);
+    font-weight: bold;
+}
+
+.panel button {
+    display: inline-block;
+    max-width: 150px;
+    max-height: 150px;
+    width: 20vw;
+    height: 20vw;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    right: 0;
+    border: none;
+    outline: none;
+}
+
+.panel img {
+    display: inline-block;
+    width: 100%;
+}
+
+.like {
+    padding: 0;
+    border: none;
+    background: url("https://davido777rex.github.io/My_fisrt_anal/Zeropio/assets/corazon.png") left center no-repeat;
+    background-size: cover;
+}
+
+.play {
+    animation: play 0.8s steps(28);
+    animation-fill-mode: forwards;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.boton {
+    background: transparent;
+    border-color: red;
+    border-style: hidden;
+    background-image: url('https://img.icons8.com/ios-glyphs/30/000000/chevron-left.png');
+    height: 30px;
+    width: 30px;
+    transform: rotateX(-180deg);
+    transform: rotateY(-180deg);
+    opacity: 0.2;
+}
+
+.boton-back {
+    background: transparent;
+    border-color: red;
+    border-style: hidden;
+    background-image: url('https://img.icons8.com/ios-glyphs/30/000000/chevron-left.png');
+    height: 30px;
+    width: 30px;
+    transform: rotateX(-180deg);
+    opacity: 0.2;
+}
+
+
+/* 
+    LA FUMADA EMPIEZA AQUÍ
+*/
+
+.balloonsContainer {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.balloonsContainer>div {
+    width: 5vw;
+    height: 6vw;
+    border-radius: 0;
+    border-radius: 80% 80% 80% 80%;
+    margin: 0 auto;
+    padding: 10px;
+    -webkit-transform-origin: bottom center;
+    transform-origin: bottom center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.balloonsContainer>div:nth-child(1) {
+    background: rgba(182, 15, 97, 0.9);
+    box-shadow: inset 10px 10px 10px rgba(135, 11, 72, 0.9);
+    -webkit-animation: balloon1 6s ease-in-out infinite;
+    -moz-animation: balloon1 6s ease-in-out infinite;
+    -o-animation: balloon1 6s ease-in-out infinite;
+    animation: balloon1 6s ease-in-out infinite;
+}
+
+.balloonsContainer>div:nth-child(1) span {
+    font-size: 5vw;
+    color: white
+}
+
+.balloonsContainer>div:nth-child(1):before {
+    color: rgba(182, 15, 97, 0.9);
+    position: absolute;
+    bottom: -11px;
+    left: 2.5vw;
+    content: "▲";
+    font-size: 1em;
+}
+
+.balloonsContainer>div:nth-child(2) {
+    background: rgba(242, 112, 45, 0.9);
+    box-shadow: inset 10px 10px 10px rgba(222, 85, 14, 0.9);
+    -webkit-animation: balloon2 6s ease-in-out infinite;
+    -moz-animation: balloon2 6s ease-in-out infinite;
+    -o-animation: balloon2 6s ease-in-out infinite;
+    animation: balloon2 6s ease-in-out infinite;
+}
+
+.balloonsContainer>div:nth-child(2) span {
+    font-size: 5vw;
+    color: white
+}
+
+.balloonsContainer>div:nth-child(2):before {
+    color: rgba(242, 112, 45, 0.9);
+    position: absolute;
+    bottom: -11px;
+    left: 2.5vw;
+    content: "▲";
+    font-size: 1em;
+}
+
+.balloonsContainer>div:nth-child(3) {
+    background: rgba(45, 181, 167, 0.9);
+    box-shadow: inset 10px 10px 10px rgba(35, 140, 129, 0.9);
+    -webkit-animation: balloon4 6s ease-in-out infinite;
+    -moz-animation: balloon4 6s ease-in-out infinite;
+    -o-animation: balloon4 6s ease-in-out infinite;
+    animation: balloon4 6s ease-in-out infinite;
+}
+
+.balloonsContainer>div:nth-child(3) span {
+    font-size: 5vw;
+    color: white
+}
+
+.balloonsContainer>div:nth-child(3):before {
+    color: rgba(45, 181, 167, 0.9);
+    position: absolute;
+    bottom: -11px;
+    left: 2.5vw;
+    content: "▲";
+    font-size: 1em;
+}
+
+.balloonsContainer>div:nth-child(4) {
+    background: rgba(190, 61, 244, 0.9);
+    box-shadow: inset 10px 10px 10px rgba(173, 14, 240, 0.9);
+    -webkit-animation: balloon1 6s ease-in-out infinite;
+    -moz-animation: balloon1 6s ease-in-out infinite;
+    -o-animation: balloon1 6s ease-in-out infinite;
+    animation: balloon1 6s ease-in-out infinite;
+}
+
+.balloonsContainer>div:nth-child(4) span {
+    font-size: 5vw;
+    color: white
+}
+
+.balloonsContainer>div:nth-child(4):before {
+    color: rgba(190, 61, 244, 0.9);
+    position: absolute;
+    bottom: -11px;
+    left: 2.5vw;
+    content: "▲";
+    font-size: 1em;
+}
+
+.balloonsContainer>div:nth-child(5) {
+    background: rgba(180, 224, 67, 0.9);
+    box-shadow: inset 10px 10px 10px rgba(158, 206, 34, 0.9);
+    -webkit-animation: balloon3 6s ease-in-out infinite;
+    -moz-animation: balloon3 6s ease-in-out infinite;
+    -o-animation: balloon3 6s ease-in-out infinite;
+    animation: balloon3 6s ease-in-out infinite;
+}
+
+.balloonsContainer>div:nth-child(5) span {
+    font-size: 5vw;
+    color: white
+}
+
+.balloonsContainer>div:nth-child(5):before {
+    color: rgba(180, 224, 67, 0.9);
+    position: absolute;
+    bottom: -11px;
+    left: 2.5vw;
+    content: "▲";
+    font-size: 1em;
+}
+
+.balloonsContainer>div:nth-child(6) {
+    background: rgba(242, 194, 58, 0.9);
+    box-shadow: inset 10px 10px 10px rgba(234, 177, 15, 0.9);
+    -webkit-animation: balloon2 6s ease-in-out infinite;
+    -moz-animation: balloon2 6s ease-in-out infinite;
+    -o-animation: balloon2 6s ease-in-out infinite;
+    animation: balloon2 6s ease-in-out infinite;
+}
+
+.balloonsContainer>div:nth-child(6) span {
+    font-size: 5vw;
+    color: white
+}
+
+.balloonsContainer>div:nth-child(6):before {
+    color: rgba(242, 194, 58, 0.9);
+    position: absolute;
+    bottom: -11px;
+    left: 2.5vw;
+    content: "▲";
+    font-size: 1em;
+}
+
+@keyframes play {
+    100% {
+        background-position: right;
+    }
+}
+
+@keyframes balloon1 {
+    0%,
+    100% {
+        -webkit-transform: translateY(0) rotate(-6deg);
+    }
+    50% {
+        -webkit-transform: translateY(-20px) rotate(8deg);
+    }
+}
+
+@keyframes balloon2 {
+    0%,
+    100% {
+        transform: translateY(0) rotate(6deg);
+    }
+    50% {
+        transform: translateY(-30px) rotate(-8deg);
+    }
+}
+
+@keyframes balloon3 {
+    0%,
+    100% {
+        transform: translate(0, -10px) rotate(6eg);
+    }
+    50% {
+        transform: translate(-20px, 30px) rotate(-8deg);
+    }
+}
+
+@keyframes balloon4 {
+    0%,
+    100% {
+        transform: translate(10px, -10px) rotate(-8eg);
+    }
+    50% {
+        transform: translate(-15px, 10px) rotate(10deg);
+    }
+}
